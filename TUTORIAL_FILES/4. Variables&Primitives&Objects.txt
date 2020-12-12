@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class HelloWorld{
+
+     public static void main(String[] args){ //Methods
+        Scanner sc=new Scanner(System.in);
+	//java.util.Scanner sc=java.util.Scanner(System.in);
+	
+	int x=5; //Primitive
+	Integer y=5; //object(5 is autoboxed)
+	System.out.println(x);
+	System.out.println(y);
+     }
+}
+
+//Variables used to store data
+//Data Type-Types of data
+	//Statically-Variables are given data tupes up front
+	//Dynamically-Variables do not have types
+	
+
+
+// Declaration − A variable declaration with a variable name with an object type.
+// Instantiation − The 'new' keyword is used to create the object.
+// Initialization − The 'new' keyword is followed by a call to a constructor. This call initializes the new object.
+

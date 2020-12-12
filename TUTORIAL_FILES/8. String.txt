@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class HelloWorld{
+
+     public static void main(String[] args){ //Methods
+        Scanner sc=new Scanner(System.in);
+	
+	String x="Hello"; //Instance of a class
+	System.out.println(x.charAt(0));
+
+	String name="World";
+	System.out.println(String.format("Hello %s", name));	
+	System.out.println(name.length());
+	System.out.println(name.charAt(name.length()-1));
+	System.out.println(name.toUpperCase());
+	System.out.println(name.toLowerCase());
+	System.out.println(name.substring(0,2));
+	System.out.println(name.equals(x));
+     }
+}
+
+//String is a Class
+//'+' operator can combine two string

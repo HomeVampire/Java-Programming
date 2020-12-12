@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class HelloWorld{
+
+     public static final double PI=3.14159; //Making a variable fixed
+
+     public static void main(String[] args){ //Methods
+        boolean isFoodHot=true;
+	byte b='c';
+	byte m=25;
+	char c='z';
+	short s=32767;
+	int i=252525;
+	long l=50L;
+	
+	float f=20.5f;
+	double d=20.5;
+
+	double dd=20.5f; //Implicit typecast
+	float ff=dd/s; //Not possible. Hre we need type-casting
+	float ff=(float)(dd/f); //Explicit typecast
+		
+
+     }
+}
+
+//All of these are non-primitive data types

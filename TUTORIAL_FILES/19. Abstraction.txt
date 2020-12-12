@@ -1,0 +1,40 @@
+// Data abstraction is the process of hiding certain details and showing only essential information to the user.
+// Abstraction can be achieved with either abstract classes or interfaces
+
+abstract class A{
+	abstract void callme();
+	
+	//Concrete methods are also allowed in abstruct class
+	void pleaseCallMe(){
+		System.out.println("This is a concrete method");
+	}
+}
+
+class B extends A{
+
+	@Override
+	void callme(){
+		System.out.println("Method description for class B");
+	}
+}
+
+class C extends A{
+
+	@Override
+	void callme(){
+		System.out.println("Method description for class c");
+	}
+}
+
+public class Main{
+	public static void main(String[] args){
+		B obj1=new B();
+		C obj2=new C();
+		
+		obj1.callme();
+		obj1.pleaseCallMe();
+		
+		obj2.callme();
+		obj2.pleaseCallMe();
+	}
+}

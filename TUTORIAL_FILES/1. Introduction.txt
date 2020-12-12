@@ -1,0 +1,13 @@
+public class HelloWorld{
+
+     public static void main(String []args){ //Methods
+        System.out.println("Hello World");
+     }
+}
+
+//Class contains everything-has members
+	//methods-do somthing
+	//properties-store something
+//Acess specifies-specifies accessibility to user
+//Object-Instance of class
+//static-No instance of a class needed

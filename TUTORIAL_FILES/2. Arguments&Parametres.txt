@@ -1,0 +1,10 @@
+public class HelloWorld{
+
+     public static void main(String[] args){ //Methods
+        System.out.println("Hello"+args[0]);
+     }
+}
+
+//Arguments- What you pass to a method(Part of the calling)
+//Parameter- Variables to store arguments(Part of definition)
+//Function declares inside a class call method

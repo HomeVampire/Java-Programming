@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class HelloWorld{
+
+     public static void main(String[] args){ //Methods
+	
+	    int data=10;
+
+	    if(data>10){	//If and If-else statements
+		    System.out.println("Big");
+	    }
+	    else if(data==10){
+		    System.out.println("Equals");
+	    }
+	    else{
+	    	System.out.println("Less");
+	    }
+		
+		int check=2;
+		switch(check){	//Switch case
+			case 1: System.out.println("One");	break;
+			case 2: System.out.println("Two");	break;
+			case 3: System.out.println("Three");break;
+			default: break;
+		}
+
+    }
+}

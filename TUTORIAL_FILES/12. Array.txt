@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class HelloWorld{
+
+     public static void main(String[] args){ //Methods
+	
+	    byte byteArray[];
+		short shortsArray[];
+		boolean booleanArray[];
+		int intArray[];
+		long longArray[];
+		float floatArray[];
+		double doubleArray[];
+		char charArray[];
+		
+		intArray = new int[20];	//Creating instances
+		
+		// or you can use
+		// int[] intArray = new int[20];
+		
+		// Declaring array literal
+		// int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 };
+		
+		//Taking input in an array
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<5;i++){
+			intArray[i]=sc.nextInt();
+		}
+		
+		//print an array
+		for(int i=0;i<5;i++){
+			System.out.print(intArray[i]+"\t");
+		}
+		
+    }
+}
+
+//To know more about array visit: https://www.tutorialspoint.com/java/java_arrays.htm

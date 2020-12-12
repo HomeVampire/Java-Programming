@@ -1,0 +1,6 @@
+// Polymorphism is ann ability of an entity to take several forms
+// Types of polymorphism
+// 1. Static-A polymorphism that is resolved during compile time is known as static polymorphism
+//			ex-Method Overloading
+// 2. Dynamic-Dynamic polymorphism is a process in which a call to an overriden method is resolved at runtime.
+//			ex-Method Overriding

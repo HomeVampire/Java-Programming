@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class HelloWorld{
+
+     public static void main(String[] args){ //Methods
+        Scanner sc=new Scanner(System.in);
+	
+	String x=new String("Hello"); //Instance of a class
+
+	String name=new String("Hello");
+
+	if(x==name){} //Primitives-This will work but 
+		      //Objects-This will not work
+
+	System.out.println(x==name);
+	System.out.println(x.equals(name)); //Works for objects
+     }
+}

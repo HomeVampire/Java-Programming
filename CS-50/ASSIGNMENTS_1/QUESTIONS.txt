@@ -1,0 +1,39 @@
+Java Assignment
+
+1. Create an Interface named Converter. This interface has a method with signature meaning that
+it takes an Object as a parameter and returns another Object.
+
+2. Create an Abstract class named TemperatureConverter that implements the Converter interface.
+TemperatureConverter has an abstract method with signature protected boolean isHot(double)
+which takes a temperature as a parameter and decides if that temperature is hot or not.
+(implementation is at your discretion).
+
+3. Create another Abstract class named SpeedConverter that implements Converter interface.
+SpeedConverter has an abstract method with signature protected boolean isFast(double)
+which takes a speed as a parameter and decides if it is fast or not.
+(implementation is at your discretion).
+
+4. Create two classes Thermometer and Thermocouple. Both extends TemperatureConverter. 
+
+5. Thermometer overrides convert to convert Celsius to Fahrenheit and Celsius to Kelvin respectively.
+
+6. Create two more classes PitotTube and ShaftLog` both extending SpeedConverter.
+(Pitot Tube and Shaft Log are instruments used to measure speed of aircrafts and ships.)
+
+7. PitotTube and ShaftLog overrides convert to convert kms to mach and kmh to mph respectively.
+
+8. Create a class Main with the Java main method.
+
+9. Make a variable of type Converter (say converter).
+Take user input from choice from 1 to 4. Dynamically assign an object to converter variable based on user input.
+Store an instance of Thermometer for 1, Thermocouple for 2, PitotTube for 3 or ShaftLog for 4.
+
+10. Call the convert method on the converter variable passing some random value and print its returned value.
+Why do you think it is possible to call the convert method on an instance of Thermometer or PitotTube?
+
+11. If the input choice is 1 or 2, try calling the isHot method on the converter object.
+Why do you think this fails even though converter holds an object of Thermometer or Thermocouple?
+For input choice of 3 or 4, try calling the isFast method. This fails too.
+
+12. Now, depending on the input choice from step 9, force typecast the converter instance to its subclass of Thermometer,
+Thermocouple , PitotTube or ShaftLog. Now try calling the isHot and isFast accordingly. Why do you think it works now?

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class HelloWorld{
+
+     public static void main(String[] args){ //Methods
+	
+	    int data=10;
+
+	    while(data>=0){	//While loop
+			System.out.println(data);
+			data--;
+		}
+		
+		data=10;
+
+	    do{	//Do-While loop
+			System.out.println(data);
+			data--;
+		}
+		while(data>=0);
+		
+		data=10;
+
+	    for(int i=data;i>=0;i--){	//For loop
+			System.out.println(i);
+		}
+    }
+}
+
+//We can use break or continue inside of a loop at anu place
+//break statements stop the further execution of the loop and goto the outside of the loop
+//continue statement stop the further execution of the code inside the loop and starts a new iteration

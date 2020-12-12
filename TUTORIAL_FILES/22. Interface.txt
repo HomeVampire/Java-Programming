@@ -1,0 +1,34 @@
+// Interface act as a blueprint of a class. It specify what a class do but not how.
+// Unlike abstract class it doesnot contain any concrete methd
+// It is used to achieve loose coupling(Loose coupling is a design to reduce the inter dependencies between
+// components of a system)
+
+interface I1{
+	public static final int a=10; //Initialize a variable
+	void show();
+	default void display(){
+		System.out.println("This is an concerate method");
+	}
+}
+
+public class test implements I1{
+	@Override
+	public void show(){
+		System.out.println("We are inside show method");
+	}
+	
+	public static void main(String[] args){
+		test t=new test();
+		t.show();
+		t.display();
+		
+		I1 i=new test();
+		i.show();
+		i.display();
+	}
+}
+
+// Like abstract classes, interfaces cannot be used to create objects
+// Interface methods are by default abstract and public
+// Interface attributes are by default public, static and final
+// For more info visit: https://www.w3schools.com/java/java_interface.asp

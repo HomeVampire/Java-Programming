@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class HelloWorld{
+
+     public static void main(String[] args){ //Methods
+	System.out.println(Integer.MIN_VALUE); //To find the range
+	System.out.println(Double.MAX_VALUE);
+
+	int x=10;
+	int y=20;
+	System.out.println(Integer.max(x,y));
+	System.out.println(Integer.compare(x,y));
+     }
+}
+
+//Precedence-order evaluated
+//Brace
+//modulus, Multiplication, Divisiob
+//Addition, Subtraction

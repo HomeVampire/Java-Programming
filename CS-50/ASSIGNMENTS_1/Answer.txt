@@ -1,0 +1,21 @@
+10. Call the convert method on the converter variable passing some random value and print its returned value.
+Why do you think it is possible to call the convert method on an instance of Thermometer or PitotTube?
+=============================================================================================================
+	Yes, it is possible to call the convert method on an instance of Thermometer or PitotTube because,
+Thermometer or PitotTube inherits all the methods of Converter interface though they are not directly inherit those
+methods from Converter it comes with the abstruct class TemperatureConverter or SpeedConverter.
+================================================================================================================
+11. If the input choice is 1 or 2, try calling the isHot method on the converter object.
+Why do you think this fails even though converter holds an object of Thermometer or Thermocouple?
+For input choice of 3 or 4, try calling the isFast method. This fails too.
+===============================================================================================================
+	This fails because converter instance does not have any information about the isHot method or isFast method
+so, it will give compile-time error.
+=======================================================================================================================
+12. Now, depending on the input choice from step 9, force typecast the converter instance to its subclass of Thermometer,
+Thermocouple , PitotTube or ShaftLog. Now try calling the isHot and isFast accordingly. Why do you think it works now?
+======================================================================================================================
+	Now, it works because of the explicit typecasting. When we typecast Converter to its subclass of Thermometer,
+Thermocouple , PitotTube or ShaftLog then it may consist the information of their sub-class method 
+But it may fails in some cases when those methods are using some data 
+that is not provide by the Converter class and it will give a run-time error.

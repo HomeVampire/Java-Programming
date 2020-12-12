@@ -1,0 +1,20 @@
+abstract class A{
+	final void pleaseCallMe(){
+		System.out.println("This is a concrete method which is final");
+	}
+}
+
+class B extends A{
+
+	// @Override
+	// void callme(){
+	// 	   System.out.println("It will give an Error");
+	// }
+}
+
+public class Main{
+	public static void main(String[] args){
+		B obj1=new B();
+		obj1.pleaseCallMe();
+	}
+}

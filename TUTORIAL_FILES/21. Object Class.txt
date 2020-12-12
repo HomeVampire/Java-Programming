@@ -1,0 +1,24 @@
+//The Object(in the API reference documentation) class sits at 
+//the top of the class hierarchy tree in the Java development environment.
+//Every class in the Java system is a descendent (direct or indirect) of the Object class.
+
+abstract class A{
+	abstract Object callme(Object obj);
+}
+
+class B extends A{
+
+	@Override
+	Object callme(Object obj){
+		double d=(double)obj + 5.0d;
+		return d;
+	}
+}
+
+public class Main{
+	public static void main(String[] args){
+		B obj1=new B();
+		
+		System.out.println("The Data is: " + obj1.callme(13.5d));
+	}
+}

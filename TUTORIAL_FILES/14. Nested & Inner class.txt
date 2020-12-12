@@ -1,0 +1,28 @@
+public class Outer {
+
+    private int x = 0;
+
+    class Inner {
+
+        public int y = 1;
+
+        void output(int a) {
+            System.out.println("a = " + a);
+            System.out.println("x = " + x);
+            System.out.println("y = " + y);
+        }
+    }
+    
+    void display(int a){
+        System.out.println("a = " + a);
+        System.out.println("x = " + x);
+        //System.out.println("y = " + y);
+    }
+
+    public static void main(String[] args) {
+        Outer st = new Outer();
+        Outer.Inner fl = st.new Inner();
+        st.display(23);
+        fl.output(23);
+    }
+}

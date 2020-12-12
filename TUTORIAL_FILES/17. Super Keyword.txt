@@ -1,0 +1,31 @@
+class Employee{  //Super Class
+    float salary;
+	Employee(){ //Constructor overloading
+		salary=0;
+	}
+	Employee(int x){ //Constructor overloading
+		salary=x;
+	}
+}
+
+public class Programmer extends Employee{  //Sub-Class
+    int bonus;  
+    Programmer(int x){ //Constructor overloading
+        super(); 
+        bonus=x;
+    }
+	Programmer(int x, int y){ //Constructor overloading
+        super(y); 
+        bonus=x;
+    }
+	void display(){
+		System.out.println("salary=" + salary);
+		System.out.println("bonus=" + bonus);
+	}
+	public static void main(String[] args){
+		Programmer p=new Programmer(25000);
+		Programmer q=new Programmer(25000,50000);
+		p.display();
+		q.display();
+	}
+}
